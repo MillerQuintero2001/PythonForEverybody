@@ -25,15 +25,8 @@ for line in fh:
         hour = words[5].split(':')
         countDict[hour[0]] = countDict.get(hour[0],0) + 1
         
-# # Now it's time to sort dictionary by key
-# orderedList = []
-# for k,v in countDict.items():
-#     orderedList.append((k,v))
-# orderedList.sort()
-
+# Now it's time to create a dictionary sorted by key
+orderedDict = {key: countDict[key] for key in sorted(countDict)}
 # Finally, print it
-print(sorted(countDict))
-# for k,v in sorted(countDict):
-#     print(k,v)
-    
-        
+for k, v in orderedDict.items():
+    print(k,v)
