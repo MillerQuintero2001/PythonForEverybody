@@ -1,6 +1,6 @@
 # Name: Miller Quintero
 # Date: Dec 3, 2024
-# Brief: Web scraping an HTML page to get the total sum of a numerical table data
+# Brief: Assigment about do web scraping an HTML page to get the total sum of a numerical table data
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
