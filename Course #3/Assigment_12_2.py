@@ -15,6 +15,7 @@ mysock.send(cmd)
 while True:
     # Take 512 characters
     data = mysock.recv(512)
+    # Where there is no more data to scrap, end routine
     if (len(data) < 1):
         break
     """ Decode from UTF-8 to unicode again, and print the received stream,
