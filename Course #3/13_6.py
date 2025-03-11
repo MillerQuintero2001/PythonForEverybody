@@ -45,9 +45,9 @@ while True:
         print(data)
         break
     # This line here, allow us to see original JSON data
-    # print(json.dumps(js, indent=4))
-    # print(json.dumps(js['features'], indent=4))
-    # print(json.dumps(js['features'][0], indent=4))
+    print(json.dumps(js, indent=4))
+    print(json.dumps(js['features'], indent=4))
+    print(json.dumps(js['features'][0], indent=4))
 
     lat = js['features'][0]['properties']['lat']
     lon = js['features'][0]['properties']['lon']
